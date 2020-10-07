@@ -7,7 +7,7 @@ export class Counter extends EventEmitter {
         super();
     }
 
-    public increment() {
+    public increment(): void {
         this._count++;
         this.emit('incremented', this._count);
     }
