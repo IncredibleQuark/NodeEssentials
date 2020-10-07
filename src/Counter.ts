@@ -13,6 +13,6 @@ export class Counter extends EventEmitter {
     }
 
     public handleEmit(emittedValue: number): void {
-        console.log(emittedValue);
+        console.log(`Counter incremented, current value: ${emittedValue}`);
     }
 }
