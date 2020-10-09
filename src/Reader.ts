@@ -19,4 +19,8 @@ export class Reader extends Readable {
     public onNewStreamChunk(chunk: string): void {
         console.log(`Stream received another chunk: ${chunk}`);
     }
+
+    public onFinishStreamChunk(): void {
+        console.log("########## Stream Reader Finished ########## \n");
+    }
 }

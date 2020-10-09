@@ -1,7 +1,7 @@
 import {EventEmitter} from "events";
 
 // in JS it would be "util.inherits(Counter, EventEmitter)"
-export class Counter extends EventEmitter {
+export class Counter extends EventEmitter  {
 
     constructor(private _count: number) {
         super();
